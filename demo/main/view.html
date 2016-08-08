@@ -1,3 +1,4 @@
+<!-- 这一个例子主要研究第一部分，它演示栅格系统的行为属性：拖动、缩放、浮动、推动、交换 -->
 <div class="demo-container">
     <h2>Standard Items</h2>
     <input type="button" ng-click="gridsterOpts.draggable.enabled = !gridsterOpts.draggable.enabled" value="{{gridsterOpts.draggable.enabled ? 'Disable' : 'Enable' }} Draggability" />
@@ -12,7 +13,7 @@
 	<input type="text" ng-model="gridsterOpts.margins[1]" size="3" />
 
     <p>
-        Each item provides its own dimensions and position using the standard fields: { row: row, col: col, sizeX: sizeX, sizeY: sizeY }.
+        Each item provides its own dimensions and position using the standard fields: { row: row, col: col, sizeX: sizeX, sizeY: sizeY }. 栅格属性的标准定义格式
     </p>
     <div gridster="gridsterOpts">
         <ul>
@@ -20,7 +21,7 @@
                 <input type="text" integer ng-model="item.row" size="1" />,
                 <input type="text" integer ng-model="item.col" size="1" />
                 <br />
-                <input type="text" integer ng-model="item.sizeX" size="1" />x
+                <input type="text" integer ng-model="item.sizeX" size="1" />:
                 <input type="text" integer ng-model="item.sizeY" size="1" />
             </li>
         </ul>
@@ -28,7 +29,7 @@
 
     <h2>Custom Items</h2>
     <p>
-        Each item provides its own dimensions but with custom fields defined using customItemMap: { position: [row, col], size: { x: sizeX, y: sizeY }}
+        Each item provides its own dimensions but with custom fields defined using customItemMap: { position: [row, col], size: { x: sizeX, y: sizeY }}. 栅格属性的自定义格式
     </p>
     <div gridster="gridsterOpts">
         <ul>
@@ -36,7 +37,7 @@
                 <input type="text" integer ng-model="item.position[0]" size="1" />,
                 <input type="text" integer ng-model="item.position[1]" size="1" />
                 <br />
-                <input type="text" integer ng-model="item.size.x" size="1" />x
+                <input type="text" integer ng-model="item.size.x" size="1" />:
                 <input type="text" integer ng-model="item.size.y" size="1" />
             </li>
         </ul>
@@ -52,7 +53,7 @@
                 <input type="text" integer ng-model="item.position[0]" size="1" />,
                 <input type="text" integer ng-model="item.position[1]" size="1" />
                 <br />
-                <input type="text" integer ng-model="item.size.x" size="1" />x
+                <input type="text" integer ng-model="item.size.x" size="1" />:
                 <input type="text" integer ng-model="item.size.y" size="1" />
             </li>
         </ul>
@@ -68,7 +69,7 @@
                 <input type="text" integer ng-model="item.grid.row" size="1" />,
                 <input type="text" integer ng-model="item.grid.col" size="1" />
                 <br />
-                <input type="text" integer ng-model="item.grid.sizeX" size="1" />x
+                <input type="text" integer ng-model="item.grid.sizeX" size="1" />:
                 <input type="text" integer ng-model="item.grid.sizeY" size="1" />
             </li>
         </ul>
